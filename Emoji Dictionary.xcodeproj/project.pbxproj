@@ -13,6 +13,7 @@
 		1D48045619F5990600978DF3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D48045419F5990600978DF3 /* LaunchScreen.xib */; };
 		1D48046219F5990600978DF3 /* Emoji_DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D48046119F5990600978DF3 /* Emoji_DictionaryTests.swift */; };
 		1D487AD119F59B2C00D4FD0D /* EmojiListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D487AD019F59B2C00D4FD0D /* EmojiListViewController.swift */; };
+		1DBC156819FED1560032BD3C /* EmojiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBC156719FED1560032BD3C /* EmojiDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		1D48046019F5990600978DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D48046119F5990600978DF3 /* Emoji_DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji_DictionaryTests.swift; sourceTree = "<group>"; };
 		1D487AD019F59B2C00D4FD0D /* EmojiListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiListViewController.swift; sourceTree = "<group>"; };
+		1DBC156719FED1560032BD3C /* EmojiDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				1D48044B19F5990600978DF3 /* AppDelegate.swift */,
+				1D487AD019F59B2C00D4FD0D /* EmojiListViewController.swift */,
+				1DBC156719FED1560032BD3C /* EmojiDetailViewController.swift */,
 				1D48044F19F5990600978DF3 /* Main.storyboard */,
 				1D48045219F5990600978DF3 /* Images.xcassets */,
 				1D48045419F5990600978DF3 /* LaunchScreen.xib */,
 				1D48044919F5990600978DF3 /* Supporting Files */,
-				1D487AD019F59B2C00D4FD0D /* EmojiListViewController.swift */,
 			);
 			path = "Emoji Dictionary";
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D487AD119F59B2C00D4FD0D /* EmojiListViewController.swift in Sources */,
+				1DBC156819FED1560032BD3C /* EmojiDetailViewController.swift in Sources */,
 				1D48044C19F5990600978DF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

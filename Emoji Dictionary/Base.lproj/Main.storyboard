@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="-682" y="-315"/>
         </scene>
-        <!--View Controller-->
+        <!--Emoji Detail View Controller-->
         <scene sceneID="lHV-ue-dn5">
             <objects>
-                <viewController id="9zd-cK-JeO" sceneMemberID="viewController">
+                <viewController id="9zd-cK-JeO" customClass="EmojiDetailViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TN6-z7-h7h"/>
                         <viewControllerLayoutGuide type="bottom" id="IU6-bi-5zg"/>
@@ -62,7 +62,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5A-hZ-uG4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="😭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5A-hZ-uG4">
                                 <rect key="frame" x="26" y="70" width="548" height="138"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="138" id="Yf9-Jr-f8U"/>
@@ -91,6 +91,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="hXc-Im-tcr" secondAttribute="trailing" constant="10" id="xbg-TW-6gO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiLabel" destination="d5A-hZ-uG4" id="mI1-Hl-rNf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cut-j0-HIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
