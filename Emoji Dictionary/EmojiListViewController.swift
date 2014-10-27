@@ -29,4 +29,8 @@ class EmojiListViewController : UIViewController, UITableViewDataSource, UITable
         cell.textLabel.text = self.emojis[indexPath.row];
         return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("tableViewToEmojiSegue", sender: self)
+    }
 }
