@@ -13,8 +13,10 @@ class EmojiListViewController : UIViewController, UITableViewDataSource, UITable
 
     @IBOutlet weak var tableView: UITableView!
     
-    var emojis = ["oh hai", "😍", "😭", "LOWELL ARE COASTERZ","😗", "🐴", "end row roflz"]
+    var emojis = ["😍", "😭","😗", "🐴"]
+    var emojiDefs = ["Heart Eyes", "Crying Face", "Kissy Face", "Dat Horse"]
     var emoji = "🐷"
+    var emojiDef = "Emoji Definition"
     
     override func viewDidLoad() {
         self.tableView.dataSource = self;
@@ -26,18 +28,20 @@ class EmojiListViewController : UIViewController, UITableViewDataSource, UITable
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
-        cell.backgroundColor = UIColor.brownColor()
+        cell.backgroundColor = UIColor.whiteColor()
         cell.textLabel.text = self.emojis[indexPath.row];
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.emoji = self.emojis[indexPath.row]
+        self.emojiDef = self.emojiDefs[indexPath.row]
         self.performSegueWithIdentifier("tableViewToEmojiSegue", sender: self)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var detailViewController = segue.destinationViewController as EmojiDetailViewController
         detailViewController.emoji = self.emoji
+        detailViewController.emojiDef = self.emojiDef
     }
 }

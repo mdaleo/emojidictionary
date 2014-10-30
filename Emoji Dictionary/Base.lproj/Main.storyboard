@@ -104,6 +104,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emojiDefLabel" destination="hXc-Im-tcr" id="l1V-y4-gws"/>
                         <outlet property="emojiLabel" destination="d5A-hZ-uG4" id="mI1-Hl-rNf"/>
                     </connections>
                 </viewController>
